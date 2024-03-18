@@ -60,17 +60,6 @@
         </dependency>
     </dependencies>
 
-<!--    <build>-->
-<!--        <plugins>-->
-<!--            <plugin>-->
-<!--                <groupId>org.springframework.boot</groupId>-->
-<!--                <artifactId>spring-boot-maven-plugin</artifactId>-->
-<!--                <configuration>-->
-<!--                    <executable>true</executable>-->
-<!--                </configuration>-->
-<!--            </plugin>-->
-<!--        </plugins>-->
-<!--    </build>-->
     <build>
         <plugins>
             <plugin>
@@ -79,6 +68,13 @@
                 <version>3.11.0</version> <!-- Обновите версию здесь -->
                 <configuration>
                     <!-- Конфигурация вашего плагина, если есть -->
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <executable>true</executable>
                 </configuration>
             </plugin>
         </plugins>
