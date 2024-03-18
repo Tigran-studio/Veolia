@@ -67,7 +67,7 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.11.0</version> <!-- Обновите версию здесь -->
                 <configuration>
-                    <!-- Конфигурация вашего плагина, если есть -->
+                    <executable>true</executable>
                 </configuration>
             </plugin>
             <plugin>
