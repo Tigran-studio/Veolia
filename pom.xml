@@ -56,7 +56,7 @@
         <dependency>
             <groupId>org.jsoup</groupId>
             <artifactId>jsoup</artifactId>
-            <version>1.10.2</version>
+            <version>1.17.2</version>
         </dependency>
     </dependencies>
 
@@ -65,8 +65,9 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.11.0</version> <!-- Обновите версию здесь -->
+                <version>3.11.0</version>
                 <configuration>
+                    <release>17</release>
                     <executable>true</executable>
                 </configuration>
             </plugin>
