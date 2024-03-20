@@ -63,6 +63,8 @@ public class Parser {
                         telegramBot.sendMessage(chatId, messageText + " ջրամատակարարումը կդադարեցվի "+ result.toString().trim());
                         listOfSendMessages.add(messageText);
                         break;
+                    }else {
+                        telegramBot.sendMessage(chatId, messageText+" հասցեում դեռ տեղեկություն չկա");
                     }
                 }
             } catch (IOException e) {
