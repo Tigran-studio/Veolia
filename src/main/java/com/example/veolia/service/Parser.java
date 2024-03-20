@@ -27,8 +27,7 @@ public class Parser {
             listOfArticle.add(element.text());
         return listOfArticle;
     }
-    public  void toTimer() throws IOException {
-
+    public  void toTimer() {
         Timer timer = new Timer();
         timer.schedule(new TimerTask() {
             @Override
@@ -63,8 +62,9 @@ public class Parser {
                         telegramBot.sendMessage(chatId, messageText + " ջրամատակարարումը կդադարեցվի "+ result.toString().trim());
                         listOfSendMessages.add(messageText);
                         break;
-                    }else {
+                    }if(text.contains(messageText)&&listOfSendMessages.contains(messageText)) {
                         telegramBot.sendMessage(chatId, messageText+" հասցեում դեռ տեղեկություն չկա");
+                        break;
                     }
                 }
             } catch (IOException e) {
