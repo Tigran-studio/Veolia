@@ -14,7 +14,7 @@
     <name>VeoliaSupportBot</name>
     <description>VeoliaSupportBot</description>
     <properties>
-        <java.version>17</java.version>
+        <java.version>11</java.version>
         <telegram.version>6.9.7.1</telegram.version>
     </properties>
     <dependencies>
