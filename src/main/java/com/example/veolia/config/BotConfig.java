@@ -15,4 +15,6 @@ public class BotConfig
     String botName;
     @Value("${bot.token}")
     String token;
+//    @Value("${telegram.webhook-path}")
+//    String webhookPath;
 }
