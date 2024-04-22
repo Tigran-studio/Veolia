@@ -1,0 +1,6 @@
+public class Announcement
+{
+    String Address;
+    DateTime From;
+    DateTime To;
+}
